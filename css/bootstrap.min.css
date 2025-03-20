@@ -3441,8 +3441,8 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-primary {
-    color: #FF800F;
-    border-color: #FF800F
+    color: #0b6f8f;
+    border-color: #0b6f8f
 }
 
 .btn-outline-primary:hover {
@@ -8340,11 +8340,11 @@ fieldset:disabled .btn {
 }
 
 .bg-primary {
-    background-color: #FF800F !important
+    background-color: #0b6f8f !important
 }
 
 .bg-secondary {
-    background-color: #001064 !important
+    background-color: #FF800F !important
 }
 
 .bg-success {
