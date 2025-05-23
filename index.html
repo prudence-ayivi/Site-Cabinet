@@ -2,591 +2,260 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Cabinet CEFI - Cabinet d'Etudes, de Formations et d'Ingénierie</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIENS</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.ico">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
+<body class="bg-white text-gray-800">
+
+  <!-- MENU SUPÉRIEUR -->
+  <header class="bg-green-600 text-white py-2 pt-8">
+    <div class="container mx-auto flex justify-between items-center px-4 ">
+      <img src="assets/logo.png" alt="Logo" class="h-[60px] w-[140px]">
+      <div class="flex justify-center items-center space-x-4">
+        <p class="font-metropolis text-[14px] tracking-[2px] leading-[20px] hover:underline">HARMONY | RESPONSIBILITY |
+          PROSPERITY</p>
+        <button class="bg-white text-green-600 px-4 py-2 rounded-md">BOUTIQUE</button>
+      </div>
     </div>
-    <!-- Spinner End -->
+  </header>
 
+  <!-- DEUXIÈME MENU -->
+  <nav class="bg-white py-4 shadow-sm pb-6">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <img src="assets/Logo DS-Com.jpg" class="h-[75px] w-[141px]" alt="Logo">
+      <div class="flex items-start space-x-6 mr-2 font-metropolis text-[14px] tracking-[2px] leading-[20px]">
+        <a href="#" class="text-black hover:text-green-600">ACCEUIL</a>
+        <a href="#" class="text-black hover:text-green-600">A PROPOS</a>
+        <a href="#" class="text-black hover:text-green-600">OPPORTUNITE</a>
+        <a href="#" class="text-black hover:text-green-600">PRODUITS</a>
+        <a href="#" class="text-black hover:text-green-600">TEMOIGNAGES</a>
+        <a href="#" class="text-black hover:text-green-600">CONTACT</a>
+        <a href="#" class="text-black hover:text-green-600">ACTUALITES</a>
+        <button><i class="bi bi-search text-green-600 text-lg"></i></button>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark text-white-50 py-2 px-0 d-none d-lg-block">
-        <div class="row gx-0 align-items-center">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-phone-alt me-2"></small>
-                    <small>+229 96222395</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="far fa-envelope-open me-2"></small>
-                    <small>cefingenierie@gmail.com</small>
-                </div>
-            </div>
+  <!-- LANDING SECTION -->
+  <section class="h-screen bg-cover bg-bottom flex flex-col justify-start items-center text-center text-black pt-6"
+    style="background-image: url('assets/bg.jpg');">
+    <div class="mx-36 mt-12">
+      <h1 class="text-4xl font-bold">Change ta vie, Développe ton potentiel</h1>
+      <p class="text-[20px] text-gray-600 mx-16 mt-4">
+        Avec TIENS DS-COM, révélez votre potentiel et devenez acteur de votre réussite.
+        Intégrez une organisation mondiale tournée vers l'excellence, l’innovation et l’épanouissement personnel.
+      </p>
+    </div>
+    <div class="mt-12 flex space-x-10">
+      <button
+        class="bg-green-600 text-white font-normal text-[20px] leading-[100%] tracking-[6.5%] px-[40px] py-[20px] rounded-full">
+        Découvrir l'Opportunité
+      </button>
+      <button
+        class="bg-green-600 text-white font-normal text-[20px] leading-[100%] tracking-[6.5%] px-[40px] py-[20px] rounded-full">
+        Nous rejoindre
+      </button>
+    </div>
+  </section>
+
+  <!-- SECTION ABOUT -->
+  <section class="py-16">
+    <div class="container mx-auto px-12 grid md:grid-cols-2 gap-8 items-center">
+      <video src="assets/video.mp4" class="w-full rounded-lg" controls></video>
+      <div>
+        <h2 class="text-3xl font-bold">TIENS DS-COM: Au cœur du continent</h2>
+        <p class="mt-4 italic">TIENS DS-COM est la plateforme de développement personnel et d’opportunités économiques
+          du Groupe TIENS en Afrique francophone. Nous formons, accompagnons et propulsons une nouvelle génération de
+          leaders engagés, autonomes et porteurs de changement.
+          Rejoignez un réseau mondial pour construire votre succès et impacter votre communauté.</p>
+        <button
+          class="mt-6 bg-green-600 text-white font-bold text-[20px] leading-[100%] tracking-[6.5%] px-4 py-2 rounded-full">A
+          Propos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PARTENAIRES -->
+  <section class="py-12">
+    <div class="container mx-auto px-12 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+      <div>
+        <h3 class="text-2xl font-bold">Nos partenaires</h3>
+        <p class="text-gray-600 mt-4">Des partenaires et références de taille <br /> mondiale
+          accompagne dans <br /> notre mission.</p>
+      </div>
+      <div class="flex space-x-4">
+        <img src="assets/part1.jpg" class="h-[127px] w-[226px]" alt="Logo Partenaire">
+        <img src="assets/part2.jpg" class="h-[85px] w-[85px]" alt="Logo Partenaire">
+        <img src="assets/part3.jpg" class="h-[85px] w-[75px]" alt="Logo Partenaire">
+        <img src="assets/part4.jpg" class="h-[122px] w-[104px]" alt="Logo Partenaire">
+        <img src="assets/part5.jpg" class="h-[98px] w-[175px]" alt="Logo Partenaire">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION JOIN US -->
+  <section class="bg-green-600 text-white py-16 px-16">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-8">
+      <div>
+        <h2 class="leading-[120%] text-white">Rejoignez une communauté <br />
+          mondiale de libre entrepreneurs engagés <br />pour leur bien-être et celui des autres.</h2>
+        <button
+          class="mt-4 bg-white text-green-600 font-bold text-[20px] leading-[100%] tracking-[6.5%] px-4 py-4 rounded-full">Nous
+          rejoindre</button>
+      </div>
+      <img src="assets/org-removebg-preview.png" class="h-[248px] w-[248px] ml-8 mt-8 md:mt-0" alt="Communauté">
+    </div>
+  </section>
+
+  <!-- SECTION PRODUITS -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-12">
+      <div class="flex justify-between items-center">
+        <div>
+          <h2 class="text-black mb-4">Nos produits</h2>
+          <p class="text-[18px] text-[#565656]">Découvrez une gamme innovante de produits de <br /> bien-être,
+            de nutrition, de soins et d’hygiène <br /> issus de la recherche avancée du Groupe TIENS.</p>
         </div>
-    </div>
-    <!-- Topbar End -->
+        <hr class="flex-grow border-t-4 border-green-600 h-16 font-bold">
+      </div>
 
+      <div class="grid md:grid-cols-3 gap-8 mt-8 px-4">
+        <div class="h-[350px] w-[300px] border-[1px] border-green-600 bg-gray-100 p-4 text-center rounded-3xl">
+          <img src="assets/cordyceps.png" class="mx-auto h-[250px] w-[250px]" alt="Produit">
+          <p class="text-[24px] text-green-600 font-bold mt-4">CORDYCEPS</p>
+        </div>
+        <div class="h-[350px] w-[300px] border-[1px] border-green-600 bg-gray-100 p-4 text-center rounded-3xl">
+          <img src="assets/zinc.png" class="mx-auto h-[250px] w-[250px]" alt="Produit">
+          <p class="text-[24px] text-green-600 font-bold mt-4">ZINC</p>
+        </div>
+        <div class="h-[350px] w-[300px] border-[1px] border-green-600 bg-gray-100 p-4 text-center rounded-3xl">
+          <img src="assets/calcium.png" class="mx-auto h-[250px] w-[250px]" alt="Produit">
+          <p class="text-[24px] text-green-600 font-bold mt-4">CALCIUM</p>
+        </div>
+        <!-- autres produits ici -->
+      </div>
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
-        <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0"><img class="img-fluid me-3" src="img/logo.png" alt="">Cabinet CEFI</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+      <!-- Barre de recherche -->
+      <div class="mt-12 flex justify-center items-center">
+        <select class="border px-4 py-3 rounded-l-3xl shadow-lg">
+          <option>Nom de produit</option>
+        </select>
+        <select class="border px-4 py-3 shadow-lg">
+          <option>Gélules</option>
+        </select>
+        <select class="border px-4 py-3 shadow-lg">
+          <option>Pays - Ville</option>
+        </select>
+        <button class="bg-green-600 text-white px-4 py-3 rounded-r-3xl flex items-center shadow-lg">
+          <i class="bi bi-search text-white mr-2"></i> Rechercher
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
-                <a href="index.html" class="nav-item nav-link">Accueil</a>
-                <a href="index.html#about" class="nav-item nav-link">A propos</a>
-                <a href="index.html#services" class="nav-item nav-link">Nos Services</a>
-                <a href="index.html#quote" class="nav-item nav-link">Contact</a>
-            </div>
-            <div class="h-100 d-lg-inline-flex align-items-center d-none">
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/formation-entreprise.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-4 animated slideInDown">Des formations adaptées à vos besoins</h1>
-                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">Nous proposons des formations de qualité pour renforcer vos compétences et optimiser la gestion de votre entreprise.</p>
-                                    <a href="#services" class="btn btn-primary py-3 px-5 animated slideInDown">Explorez</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/expert.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-4 animated slideInDown">Expertise en études et conseil stratégique</h1>
-                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">Nos analyses approfondies et conseils stratégiques vous aident à prendre des décisions éclairées pour la réussite de vos projets.</p>
-                                    <a href="#services" class="btn btn-primary py-3 px-5 animated slideInDown">Explorez</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/formation-entreprise.jpg" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-4 animated slideInDown">Ingénierie au service de la performance</h1>
-                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">Nous concevons des solutions techniques et innovantes adaptées aux défis de votre secteur d’activité.</p>
-                                    <a href="#services" class="btn btn-primary py-3 px-5 animated slideInDown">Explorez</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+      </div>
     </div>
-    <!-- Carousel End -->
+  </section>
 
-
-    <!-- About Start -->
-    <div class="container-xxl py-5" id="about">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <h1 class="display-6 mb-5">Bienvenue chez CEFI – Votre partenaire en ingénierie et formation </h1>
-                        <div class="row g-4 mb-4">
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 me-3" src="img/icon/icon-07-primary.png" alt="">
-                                    <h5 class="mb-0">Consultants Experts</h5>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0 me-3" src="img/icon/icon-09-primary.png" alt="">
-                                    <h5 class="mb-0">Solutions sur Mesure</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-4">Nous allions expertise en ingénierie, conseil et formation pour offrir des solutions innovantes et adaptées à vos besoins. Notre équipe vous accompagne avec rigueur et passion, transformant vos défis en opportunités. </p>
-                        <div class="border-top mt-4 pt-4">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="d-flex align-items-center">
-                                        <div class="btn-lg-square bg-primary rounded-circle me-2">
-                                            <i class="fa fa-phone-alt text-white"></i>
-                                        </div>
-                                        <h6 class="mb-0">+22996222395</h6>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="d-flex align-items-center">
-                                        <div class="btn-lg-square bg-primary rounded-circle me-2">
-                                            <i class="fa fa-envelope text-white"></i>
-                                        </div>
-                                        <h6 class="mb-0">cefingenierie@gmail.com</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row g-3">
-                        <div class="col-6 text-end">
-                            <img class="img-fluid w-75 wow zoomIn" data-wow-delay="0.1s" src="img/management.png" style="margin-top: 25%;">
-                        </div>
-                        <div class="col-6 text-start">
-                            <img class="img-fluid w-100 wow zoomIn" data-wow-delay="0.3s" src="img/worker.jpg">
-                        </div>
-                        <div class="col-6 text-end">
-                            <img class="img-fluid w-50 wow zoomIn" data-wow-delay="0.5s" src="img/teaming.jpg">
-                        </div>
-                        <div class="col-6 text-start">
-                            <img class="img-fluid w-75 wow zoomIn" data-wow-delay="0.7s" src="img/training.jpg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- SECTION TÉMOIGNAGES -->
+  <section class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="font-semibold">Témoignages</h2>
+        <p class="text-gray-600 mt-2 mb-8">Nos libres entrepreneurs à travers l’Afrique racontent leurs parcours et
+          racontent leurs succès</p>
+        <div class="grid md:grid-cols-3 gap-8 px-4 items-center">
+          <!-- Photo de goutte personnalisée possible en SVG ou mask -->
+          <img src="assets/user1.jpg" class="h-[389px] w-[389px]" alt="Photo Témoignage">
+          <div class="mx-4">
+            <h4 class="text-justify font-bold">LADAGO PACHA
+      </h3>
+      <p class="text-justify italic pt-2">“TIENS DS-COM a totalement transformé ma vie. Parti de zéro, j’ai bâti un
+        réseau solide à l’échelle internationale et accédé à une liberté financière durable.
+        Aujourd’hui, je forme à mon tour des leaders pour qu’eux aussi réalisent leur potentiel."</p>
+      <div class="mt-2">
+        <!-- Points carousel -->
+        <span class="inline-block h-2 w-2 bg-green-600 rounded-full mx-1"></span>
+        <span class="inline-block h-2 w-2 bg-gray-400 rounded-full mx-1"></span>
+      </div>
     </div>
-    <!-- About End -->
-
-
-    <!-- Facts Start -->
-    <!-- <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-1.jpg">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="text-primary">Happy Clients</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="text-primary">Projects Succeed</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="text-primary">Awards Achieved</span>
-                </div>
-                <div class="col-sm-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h1 class="display-4 text-white" data-toggle="counter-up">1234</h1>
-                    <span class="text-primary">Team Members</span>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Facts End -->
-
-
-    <!-- Features Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h1 class="display-6 mb-5">Quelques raisons de nous faire confiance ! </h1>
-                    <p class="mb-5">CEFI met à votre disposition son expertise en ingénierie, formation et conseil pour répondre efficacement à vos besoins. Nous nous engageons à fournir des solutions adaptées et innovantes pour accompagner la croissance de votre entreprise.</p>
-                    <div class="d-flex mb-5">
-                        <div class="flex-shrink-0 btn-square rounded-circle" style="width: 90px; height: 90px;">
-                            <img class="img-fluid" src="img/icon/icon-08-light.png" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h5 class="mb-3">Un cabinet de confiance</h5>
-                            <span>Nos experts offrent un accompagnement stratégique et technique, garantissant des résultats concrets et mesurables pour nos clients.</span>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-5">
-                        <div class="flex-shrink-0 btn-square rounded-circle" style="width: 90px; height: 90px;">
-                            <img class="img-fluid" src="img/icon/icon-10-light.png" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h5 class="mb-3">Des solutions adaptées</h5>
-                            <span>Nous proposons des services personnalisés à des coûts compétitifs, garantissant un excellent rapport qualité-prix.</span>
-                        </div>
-                    </div>
-                    <div class="d-flex mb-0">
-                        <div class="flex-shrink-0 btn-square rounded-circle" style="width: 90px; height: 90px;">
-                            <img class="img-fluid" src="img/icon/icon-06-light.png" alt="">
-                        </div>
-                        <div class="ms-4">
-                            <h5 class="mb-3">Un accompagnement permanent</h5>
-                            <span>Notre équipe est à votre écoute à tout moment pour répondre à vos préoccupations et assurer un suivi rigoureux.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100" src="img/team-training.jpg" alt="" style="object-fit: cover;">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="flex space-x-2">
+      <img src="assets/userGroup.jpg" class="h-[325px] w-[328px]" alt="">
     </div>
-    <!-- Features End -->
-
-
-    <!-- Service Start -->
-    <div class="container-xxl py-5" id="services">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6 mb-5">Nos services d'ingénierie, formation et conseil </h1>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/chart.jpeg" alt="">
-                        <div class="d-flex align-items-center bg-light">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="bi-bar-chart icon rounded-circle me-1"></i>
-                            </div>
-                            <a class="h4 mx-4 mb-0" href="">Bureau d'études</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/bureau-etude.jpg" alt="">
-                        <div class="d-flex align-items-center bg-light">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="bi-gear-wide-connected icon rounded-circle me-1"></i>
-                            </div>
-                            <a class="h4 mx-4 mb-0" href="">Assistance en Gestion</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/training.jpg" alt="">
-                        <div class="d-flex align-items-center bg-light">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="bi-person-bounding-box icon rounded-circle me-1"></i>
-                            </div>
-                            <a class="h4 mx-4 mb-0" href="">Conseils & Formations</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/market.webp" alt="">
-                        <div class="d-flex align-items-center bg-light">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="bi-graph-up icon rounded-circle me-1"></i>
-                            </div>
-                            <a class="h4 mx-4 mb-0" href="">Études de Marché</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/solar.jpg" alt="">
-                        <div class="d-flex align-items-center bg-light">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="bi-sun icon rounded-circle me-1"></i>
-                            </div>
-                            <a class="h4 mx-4 mb-0" href="">Énergie & Systèmes Solaires</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item">
-                        <img class="img-fluid" src="img/furniture.jpg" alt="">
-                        <div class="d-flex align-items-center bg-light">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="bi-basket icon rounded-circle me-1"></i>
-                            </div>
-                            <a class="h4 mx-4 mb-0" href="">Vente d'Équipements</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <!-- Service End -->
-
-
-    <!-- Quote Start -->
-    <div class="container-fluid overflow-hidden my-5 px-lg-0" id="quote">
-        <div class="container quote px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 quote-text" data-parallax="scroll" data-image-src="img/management.png">
-                    <div class="h-100 px-4 px-sm-5 ps-lg-0 wow fadeIn" data-wow-delay="0.1s">
-                        <h1 class="text-white mb-4">Des solutions sur mesure pour particuliers et entreprises</h1>
-                        <p class="text-light mb-5">Nous accompagnons les individus et les organisations avec des services adaptés à leurs besoins. De la formation à l’ingénierie, en passant par le conseil stratégique, nous vous aidons à concrétiser vos projets avec expertise et innovation.</p>
-                        <!-- <a href="" class="align-self-start btn btn-primary py-3 px-5">More Details</a> -->
-                    </div>
-                </div>
-                <div class="col-lg-6 quote-form" data-parallax="scroll" data-image-src="img/checking.jpeg">
-                    <div class="h-100 px-4 px-sm-5 pe-lg-0 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="bg-white p-4 p-sm-5">
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="gname" placeholder="Gurdian Name">
-                                        <label for="gname">Votre nom</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="gmail" placeholder="Gurdian Email">
-                                        <label for="gmail">Votre email</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="cname" placeholder="Child Name">
-                                        <label for="cname">Votre contact</label>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="cage" placeholder="Child Age">
-                                        <label for="cage">Type de Service</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 80px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary py-3 px-5" type="submit">Envoyez</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <!-- Quote End -->
+  </section>
 
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5" id="team">
-        <div class="container">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-6 mb-5">Rencontrer notre équipe de professionnelle</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>AKPOVI Espérancia</h5>
-                            <span class="text-primary">Gestionnaire de projets et Directrice de CEFI Sarl</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-5.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>TOSSOU Claude</h5>
-                            <span class="text-primary">Consultant Formateur, Spécialiste en Accompagnement des projets d'Entrepreneuriat</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>AGNAN Esparo Abdias</h5>
-                            <span class="text-primary">Suivi-évaluateur</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>TOGBLE Hortense Ez</h5>
-                            <span class="text-primary">Secrétaire-comptable</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-social">
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary rounded-circle m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5>Médard OGBOLO</h5>
-                            <span class="text-primary">Comptable</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- FOOTER -->
+  <footer class="bg-white py-8 px-16">
+    <div class="container border-y border-gray-300 px-3 py-3 grid md:grid-cols-6 gap-x-8 items-start">
+      <!-- Section principale élargie -->
+      <div class="md:col-span-2">
+        <img src="assets/Logo DS-Com.jpg" class="h-[86px] w-[162px]" alt="">
+        <p class="mt-2 text-left text-gray-600">
+          TIENS DS-COM est la représentation officielle du Groupe TIENS en Afrique francophone,
+          dédiée à la promotion de l’entrepreneuriat, du bien-être et du développement personnel à travers un réseau
+          international d’opportunités.
+        </p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#"><img src="assets/facebook.png" class="h-[36px] w-[36px]" alt=""></a>
+          <a href="#"><img src="assets/twitter.png" class="h-[36px] w-[36px]" alt=""></a>
+          <a href="#"><img src="assets/linkedin.png" class="h-[36px] w-[36px]" alt=""></a>
         </div>
+      </div>
+
+      <!-- Autres colonnes -->
+      <div class="mt-12">
+        <h4 class="font-bold mb-2">Notre Impact</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">Notre réseau </a></li>
+          <li><a href="#">Nos actions sociales</a></li>
+          <li><a href="#">Chiffres clés</a></li>
+          <li><a href="#">Nos Projets </a></li>
+        </ul>
+      </div>
+      <div class="mt-12">
+        <h4 class="font-bold mb-2">TIENS DS-COM</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">A Propos</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Devenir Investisseur</a></li>
+        </ul>
+      </div>
+      <div class="mt-12">
+        <h4 class="font-bold mb-2">Support</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">Business</a></li>
+        </ul>
+      </div>
+      <div class="mt-12">
+        <h4 class="font-bold mb-2">Contact</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">WhatsApp</a></li>
+          <li><a href="#">Support 24</a></li>
+        </ul>
+      </div>
     </div>
-    <!-- Team End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5 mb-5">
-                <div class="col-md-6">
-                    <h2 class="text-white mb-4"><img class="img-fluid me-3" src="img/logo.png" alt="">Cabinet CEFI</h2>
-                    <span>Expertise et accompagnement pour la réussite de vos projets. CEFI vous offre des solutions adaptées en gestion, ingénierie, formation et études stratégiques. Nous mettons notre savoir-faire au service de votre croissance et de l’innovation.</span>
-                </div>
-            </div>
-            <div class="row g-5">
-                <!-- <div class="col-md-6">
-                    <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Clita erat ipsum et lorem et sit, sed stet lorem sit clita.</p>
-                    <div class="position-relative">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div> -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Restons en contact</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>Tankpè, Bénin</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+229 96222395</p>
-                    <p><i class="fa fa-envelope me-3"></i>cefingenierie@gmail.com</p>
-                </div>                
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Liens Utiles</h5>
-                    <a class="btn btn-link" href="index.html#about">A propos</a>
-                    <a class="btn btn-link" href="index.html#quote">Contact-nous</a>
-                    <a class="btn btn-link" href="index.html#services">Nos Services</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Suivez-nous</h5>
-                    <div class="d-flex">
-                        <a class="btn footer-media rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn footer-media rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn footer-media rounded-circle me-1" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn footer-media rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Cabinet CEFI</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="http://agenceafrodigital.com" target="_blank">AfroDigital</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="text-center text-sm text-gray-500 mt-2">
+      © 2025 TIENS. Tous droits réservés.
     </div>
-    <!-- Footer End -->
+  </footer>
 
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/parallax/parallax.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
