@@ -20,57 +20,86 @@
   <!-- Icon Font Stylesheet -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-white text-gray-800">
 
   <!-- MENU SUPÉRIEUR -->
-  <header class="bg-green-600 text-white py-2 pt-8">
-    <div class="container mx-auto flex justify-between items-center px-4 ">
-      <img src="assets/logo.png" alt="Logo" class="h-[60px] w-[140px]">
-      <div class="flex justify-center items-center space-x-4">
-        <p class="font-metropolis text-[14px] tracking-[2px] leading-[20px] hover:underline">HARMONY | RESPONSIBILITY |
-          PROSPERITY</p>
+  <header id="topbar" class="bg-green-600 text-white py-2 pt-8 transition-all duration-300">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <img src="assets/logo.png" alt="Logo" class="h-[60px] w-[135px]">
+      <div class="flex items-center space-x-4">
+        <p class="menu-text hidden sm:block font-metropolis text-[14px] tracking-[2px] leading-[20px] hover:underline">
+          HARMONY | RESPONSIBILITY | PROSPERITY
+        </p>
         <button class="bg-white text-green-600 px-4 py-2 rounded-md">BOUTIQUE</button>
       </div>
     </div>
   </header>
 
-  <!-- DEUXIÈME MENU -->
-  <nav class="bg-white py-4 shadow-sm pb-6">
-    <div class="container mx-auto flex justify-between items-center px-4">
+  <!-- MENU PRINCIPAL -->
+  <nav id="main-nav" class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <img src="assets/Logo DS-Com.jpg" class="h-[75px] w-[141px]" alt="Logo">
-      <div class="flex items-start space-x-6 mr-2 font-metropolis text-[14px] tracking-[2px] leading-[20px]">
+
+      <!-- Menu desktop -->
+      <div class="hidden lg:flex items-center space-x-6 font-metropolis text-[14px] tracking-[2px] leading-[20px]">
         <a href="#" class="text-black hover:text-green-600">ACCEUIL</a>
-        <a href="#" class="text-black hover:text-green-600">A PROPOS</a>
-        <a href="#" class="text-black hover:text-green-600">OPPORTUNITE</a>
-        <a href="#" class="text-black hover:text-green-600">PRODUITS</a>
-        <a href="#" class="text-black hover:text-green-600">TEMOIGNAGES</a>
-        <a href="#" class="text-black hover:text-green-600">CONTACT</a>
-        <a href="#" class="text-black hover:text-green-600">ACTUALITES</a>
+        <a href="apropos.html" class="text-black hover:text-green-600">A PROPOS</a>
+        <a href="opportunite.html" class="text-black hover:text-green-600">OPPORTUNITE</a>
+        <a href="produits.html" class="text-black hover:text-green-600">PRODUITS</a>
+        <a href="temoignages.html" class="text-black hover:text-green-600">TEMOIGNAGES</a>
+        <a href="contact.html" class="text-black hover:text-green-600">CONTACT</a>
+        <a href="actualites.html" class="text-black hover:text-green-600">ACTUALITES</a>
         <button><i class="bi bi-search text-green-600 text-lg"></i></button>
       </div>
+
+      <!-- Menu mobile: recherche + hamburger -->
+      <div class="lg:hidden flex items-center space-x-2 mr-2">
+        <button><i class="bi bi-search text-green-600 text-lg mr-2"></i></button>
+        <button id="hamburger-btn" class="focus:outline-none">
+          <span class="block w-6 h-1 bg-green-600 mb-1"></span>
+          <span class="block w-6 h-1 bg-green-600 mb-1"></span>
+          <span class="block w-6 h-1 bg-green-600"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white px-8 pb-4">
+      <a href="#" class="block py-2">ACCEUIL</a>
+      <a href="apropos.html" class="block py-2">A PROPOS</a>
+      <a href="opportunite.html" class="block py-2">OPPORTUNITE</a>
+      <a href="produits.html" class="block py-2">PRODUITS</a>
+      <a href="temoignages.html" class="block py-2">TEMOIGNAGES</a>
+      <a href="contact.html" class="block py-2">CONTACT</a>
+      <a href="actualites.html" class="block py-2">ACTUALITES</a>
     </div>
   </nav>
 
   <!-- LANDING SECTION -->
-  <section class="h-screen bg-cover bg-bottom flex flex-col justify-start items-center text-center text-black pt-6"
+  <section
+    class="h-[95%] lg:h-screen bg-cover bg-bottom flex flex-col justify-start items-center text-center text-black pt-6"
     style="background-image: url('assets/bg.jpg');">
-    <div class="mx-36 mt-12">
+    <div class="mx-12 lg:mx-36 mt-12">
       <h1 class="text-4xl font-bold">Change ta vie, Développe ton potentiel</h1>
-      <p class="text-[20px] text-gray-600 mx-16 mt-4">
+      <p class="text-[20px] text-gray-600 mx-8 md:mx-16 mt-4">
         Avec TIENS DS-COM, révélez votre potentiel et devenez acteur de votre réussite.
         Intégrez une organisation mondiale tournée vers l'excellence, l’innovation et l’épanouissement personnel.
       </p>
     </div>
-    <div class="mt-12 flex space-x-10">
+    <div class="my-12 flex flex-col justify-center items-center space-y-6 md:block md:space-x-10">
       <button
-        class="bg-green-600 text-white font-normal text-[20px] leading-[100%] tracking-[6.5%] px-[40px] py-[20px] rounded-full">
-        Découvrir l'Opportunité
+        class="bg-green-600 text-white font-normal text-[16px] md:text-[20px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full">
+        <a href="opportunite.html">Découvrir l'Opportunité</a>
       </button>
       <button
-        class="bg-green-600 text-white font-normal text-[20px] leading-[100%] tracking-[6.5%] px-[40px] py-[20px] rounded-full">
-        Nous rejoindre
+        class="bg-green-600 text-white font-normal text-[16px] md:text-[20px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full">
+        <a href="contact.html">Nous rejoindre</a>
       </button>
     </div>
   </section>
@@ -86,41 +115,46 @@
           leaders engagés, autonomes et porteurs de changement.
           Rejoignez un réseau mondial pour construire votre succès et impacter votre communauté.</p>
         <button
-          class="mt-6 bg-green-600 text-white font-bold text-[20px] leading-[100%] tracking-[6.5%] px-4 py-2 rounded-full">A
+          class="mt-6 bg-green-600 text-white md:font-semibold text-[20px] leading-[100%] tracking-[6.5%] px-4 py-2 rounded-full">A
           Propos</button>
       </div>
     </div>
   </section>
 
   <!-- SECTION PARTENAIRES -->
-  <section class="py-12">
-    <div class="container mx-auto px-12 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
-      <div>
+  <section class="py-8 md:py-12">
+    <div class="container mx-auto px-12 flex flex-col md:flex-row md:items-center justify-between md:space-y-0">
+      <div class="mb-4">
         <h3 class="text-2xl font-bold">Nos partenaires</h3>
         <p class="text-gray-600 mt-4">Des partenaires et références de taille <br /> mondiale
           accompagne dans <br /> notre mission.</p>
       </div>
-      <div class="flex space-x-4">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:flex items-center">
         <img src="assets/part1.jpg" class="h-[127px] w-[226px]" alt="Logo Partenaire">
-        <img src="assets/part2.jpg" class="h-[85px] w-[85px]" alt="Logo Partenaire">
-        <img src="assets/part3.jpg" class="h-[85px] w-[75px]" alt="Logo Partenaire">
-        <img src="assets/part4.jpg" class="h-[122px] w-[104px]" alt="Logo Partenaire">
-        <img src="assets/part5.jpg" class="h-[98px] w-[175px]" alt="Logo Partenaire">
+        <img src="assets/part2.jpg" class="h-[85px] w-[85px] mx-auto " alt="Logo Partenaire">
+        <img src="assets/part3.jpg" class="h-[85px] w-[75px]  mx-4 " alt="Logo Partenaire">
+        <img src="assets/part4.jpg" class="h-[122px] w-[104px] mx-auto md:row-start-2" alt="Logo Partenaire">
+        <img src="assets/part5.jpg" class="h-[98px] w-[175px] mx-4 md:row-start-2" alt="Logo Partenaire">
       </div>
     </div>
   </section>
 
   <!-- SECTION JOIN US -->
-  <section class="bg-green-600 text-white py-16 px-16">
+  <section class="bg-green-600 text-white  py-12 md:py-16 md:px-16">
     <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-8">
       <div>
         <h2 class="leading-[120%] text-white">Rejoignez une communauté <br />
           mondiale de libre entrepreneurs engagés <br />pour leur bien-être et celui des autres.</h2>
         <button
-          class="mt-4 bg-white text-green-600 font-bold text-[20px] leading-[100%] tracking-[6.5%] px-4 py-4 rounded-full">Nous
-          rejoindre</button>
+          class="hidden md:block mt-4 bg-white text-green-600 font-semibold md:text-[20px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full">
+          <a href="contact.html">Nous rejoindre</a></button>
       </div>
-      <img src="assets/org-removebg-preview.png" class="h-[248px] w-[248px] ml-8 mt-8 md:mt-0" alt="Communauté">
+      <div class="flex flex-col justify-center items-center">
+        <img src="assets/org-removebg-preview.png" class="h-[248px] w-[248px] md:ml-8 mt-8 md:mt-0" alt="Communauté">
+        <button
+          class="flex md:hidden mt-4 bg-white text-green-600 font-semibold md:text-[20px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full">
+          <a href="contact.html">Nous rejoindre</a></button>
+      </div>
     </div>
   </section>
 
@@ -130,7 +164,8 @@
       <div class="flex justify-between items-center">
         <div>
           <h2 class="text-black mb-4">Nos produits</h2>
-          <p class="text-[18px] text-[#565656]">Découvrez une gamme innovante de produits de <br /> bien-être,
+          <p class="text-[18px] text-[#565656]">Découvrez une gamme innovante de produits de <br
+              class="hidden md:block" /> bien-être,
             de nutrition, de soins et d’hygiène <br /> issus de la recherche avancée du Groupe TIENS.</p>
         </div>
         <hr class="flex-grow border-t-4 border-green-600 h-16 font-bold">
@@ -153,7 +188,7 @@
       </div>
 
       <!-- Barre de recherche -->
-      <div class="mt-12 flex justify-center items-center">
+      <div class="hidden mt-12 md:flex justify-center items-center">
         <select class="border px-4 py-3 rounded-l-3xl shadow-lg">
           <option>Nom de produit</option>
         </select>
@@ -173,33 +208,29 @@
   <!-- SECTION TÉMOIGNAGES -->
   <section class="py-16">
     <div class="container mx-auto px-4 text-center">
-      <h3 class="font-semibold">Témoignages</h2>
-        <p class="text-gray-600 mt-2 mb-8">Nos libres entrepreneurs à travers l’Afrique racontent leurs parcours et
-          racontent leurs succès</p>
-        <div class="grid md:grid-cols-3 gap-8 px-4 items-center">
-          <!-- Photo de goutte personnalisée possible en SVG ou mask -->
-          <img src="assets/user1.jpg" class="h-[389px] w-[389px]" alt="Photo Témoignage">
-          <div class="mx-4">
-            <h4 class="text-justify font-bold">LADAGO PACHA
-      </h3>
-      <p class="text-justify italic pt-2">“TIENS DS-COM a totalement transformé ma vie. Parti de zéro, j’ai bâti un
-        réseau solide à l’échelle internationale et accédé à une liberté financière durable.
-        Aujourd’hui, je forme à mon tour des leaders pour qu’eux aussi réalisent leur potentiel."</p>
-      <div class="mt-2">
-        <!-- Points carousel -->
-        <span class="inline-block h-2 w-2 bg-green-600 rounded-full mx-1"></span>
-        <span class="inline-block h-2 w-2 bg-gray-400 rounded-full mx-1"></span>
+      <h2 class="font-semibold">Témoignages</h2>
+      <p class="text-gray-600 mt-2 mb-8">Nos libres entrepreneurs à travers l’Afrique racontent leurs parcours et
+        racontent leurs succès</p>
+    </div>
+    <!-- <div class="flex justify-center items-center mx-auto px-12"> -->
+    <div class="grid md:grid-cols-3 gap-8 px-4 items-center">
+      <!-- Photo de goutte personnalisée possible en SVG ou mask -->
+      <img src="assets/user1.jpg" class="h-[389px] w-[389px]" alt="Photo Témoignage">
+      <div class="mx-4">
+        <h4 class="text-justify font-bold">LADAGO PACHA</h4>
+                <p class="text-justify italic pt-2">“TIENS DS-COM a totalement transformé ma vie. Parti de zéro, j’ai
+                  bâti un réseau solide à l’échelle internationale et accédé à une liberté financière durable.
+                  Aujourd’hui, je forme à mon tour des leaders pour qu’eux aussi réalisent leur potentiel."</p>
+      </div> 
+      <div class="flex justify-center mt-12">
+        <img src="assets/userGroup.jpg" class=" h-[325px] w-[328px]" alt="">
       </div>
-    </div>
-    <div class="flex space-x-2">
-      <img src="assets/userGroup.jpg" class="h-[325px] w-[328px]" alt="">
-    </div>
-    </div>
+
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-white py-8 px-16">
+  <footer class="bg-white py-8 px-8 md:px-16">
     <div class="container border-y border-gray-300 px-3 py-3 grid md:grid-cols-6 gap-x-8 items-start">
       <!-- Section principale élargie -->
       <div class="md:col-span-2">
@@ -209,7 +240,7 @@
           dédiée à la promotion de l’entrepreneuriat, du bien-être et du développement personnel à travers un réseau
           international d’opportunités.
         </p>
-        <div class="flex space-x-4 mt-4">
+        <div class="hidden md:flex space-x-4 mt-4">
           <a href="#"><img src="assets/facebook.png" class="h-[36px] w-[36px]" alt=""></a>
           <a href="#"><img src="assets/twitter.png" class="h-[36px] w-[36px]" alt=""></a>
           <a href="#"><img src="assets/linkedin.png" class="h-[36px] w-[36px]" alt=""></a>
@@ -217,7 +248,7 @@
       </div>
 
       <!-- Autres colonnes -->
-      <div class="mt-12">
+      <div class="mt-2 md:mt-16">
         <h4 class="font-bold mb-2">Notre Impact</h4>
         <ul class="space-y-1 text-sm">
           <li><a href="#">Notre réseau </a></li>
@@ -226,7 +257,7 @@
           <li><a href="#">Nos Projets </a></li>
         </ul>
       </div>
-      <div class="mt-12">
+      <div class="mt-2 md:mt-16">
         <h4 class="font-bold mb-2">TIENS DS-COM</h4>
         <ul class="space-y-1 text-sm">
           <li><a href="#">A Propos</a></li>
@@ -234,7 +265,7 @@
           <li><a href="#">Devenir Investisseur</a></li>
         </ul>
       </div>
-      <div class="mt-12">
+      <div class="mt-2 md:mt-16">
         <h4 class="font-bold mb-2">Support</h4>
         <ul class="space-y-1 text-sm">
           <li><a href="#">FAQ</a></li>
@@ -242,12 +273,17 @@
           <li><a href="#">Business</a></li>
         </ul>
       </div>
-      <div class="mt-12">
+      <div class="mt-2 md:mt-16">
         <h4 class="font-bold mb-2">Contact</h4>
         <ul class="space-y-1 text-sm">
           <li><a href="#">WhatsApp</a></li>
           <li><a href="#">Support 24</a></li>
         </ul>
+      </div>
+      <div class="md:hidden flex items-center space-x-4 mt-4">
+        <a href="#"><img src="assets/facebook.png" class="h-[36px] w-[36px]" alt=""></a>
+        <a href="#"><img src="assets/twitter.png" class="h-[36px] w-[36px]" alt=""></a>
+        <a href="#"><img src="assets/linkedin.png" class="h-[36px] w-[36px]" alt=""></a>
       </div>
     </div>
     <div class="text-center text-sm text-gray-500 mt-2">
@@ -255,7 +291,9 @@
     </div>
   </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
+
 </body>
 
 </html>
