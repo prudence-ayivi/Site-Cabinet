@@ -4,13 +4,20 @@ const topbar = document.getElementById("topbar");
 
 window.addEventListener("scroll", () => {
   const currentScroll = window.scrollY;
+
   if (currentScroll > lastScroll && currentScroll > 80) {
-    topbar.classList.add("hidden");
+    // Scroll vers le bas : cache la topbar
+    topbar.classList.add("opacity-0", "-translate-y-full");
+    topbar.classList.remove("opacity-100", "translate-y-0");
   } else {
-    topbar.classList.remove("hidden");
+    // Scroll vers le haut : affiche la topbar
+    topbar.classList.remove("opacity-0", "-translate-y-full");
+    topbar.classList.add("opacity-100", "translate-y-0");
   }
+
   lastScroll = currentScroll;
 });
+
 
 // Afficher/masquer le menu mobile
 const hamburgerBtn = document.getElementById("hamburger-btn");

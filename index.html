@@ -1,469 +1,369 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TIENS</title>
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="/favicon.ico" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TIENS</title>
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/favicon.ico" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-    <link
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  </head>
+    /> -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+</head>
 
-  <body class="bg-white text-gray-800">
-    <!-- MENU SUPÉRIEUR -->
-    <header
-      id="topbar"
-      class="bg-green-600 text-white py-2 transition-all duration-300"
-    >
-      <div class="container mx-auto flex justify-between items-center px-4">
-        <img src="assets/logo.png" alt="Logo" class="w-[150px] object-cover" />
-        <div class="flex items-center space-x-4">
-          <p
-            class="menu-text hidden sm:block font-metropolis text-[14px] tracking-[2px] leading-[20px] hover:underline"
-          >
-            HARMONY | RESPONSIBILITY | PROSPERITY
-          </p>
-          <button class="bg-white text-green-600 px-4 py-2 rounded-md">
-            BOUTIQUE
-          </button>
-        </div>
+<body class="bg-white text-gray-800">
+  <!-- MENU SUPÉRIEUR -->
+  <header id="topbar" class="bg-green-600 text-white py-2 transition-all duration-300">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <img src="assets/logo.png" alt="Logo" class="w-[150px] object-cover" />
+      <div class="flex items-center space-x-4">
+        <p class="menu-text hidden sm:block font-metropolis text-[14px] tracking-[2px] leading-[20px] hover:underline">
+          HARMONY | RESPONSIBILITY | PROSPERITY
+        </p>
+        <button class="bg-white text-green-600 px-4 py-2 rounded-md">
+          BOUTIQUE
+        </button>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- MENU PRINCIPAL -->
-    <nav
-      id="main-nav"
-      class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300"
-    >
+  <!-- MENU PRINCIPAL -->
+  <nav id="main-nav" class="bg-white shadow-sm sticky top-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <img src="assets/Logo DS-Com.jpg" class="md:w-[120px] w-[80px] object-cover" alt="Logo" />
+
+      <!-- Menu desktop -->
+      <div class="hidden lg:flex items-center space-x-5 text-[14px] tracking-[2px] leading-[20px]">
+        <a href="#" class="text-black hover:text-green-600 font-semibold">ACCEUIL</a>
+        <a href="apropos.html" class="text-black hover:text-green-600 font-semibold">A PROPOS</a>
+        <a href="opportunite.html" class="text-black hover:text-green-600 font-semibold">OPPORTUNITE</a>
+        <a href="produits.html" class="text-black hover:text-green-600 font-semibold">PRODUITS</a>
+        <a href="temoignages.html" class="text-black hover:text-green-600 font-semibold">TEMOIGNAGES</a>
+        <a href="contact.html" class="text-black hover:text-green-600 font-semibold">CONTACT</a>
+        <a href="actualites.html" class="text-black hover:text-green-600 font-semibold">ACTUALITES</a>
+      </div>
+
       <div
-        class="container mx-auto px-4 py-4 flex justify-between items-center"
-      >
-        <img
-          src="assets/Logo DS-Com.jpg"
-          class="md:w-[120px] w-[80px] object-cover"
-          alt="Logo"
-        />
+        class="hidden lg:flex items-center justify-center bg-green-600 text-white p-2 rounded-full shadow-md text-lg h-10 w-10">
+        <button><i class="bi bi-search"></i></button>
+      </div>
 
-        <!-- Menu desktop -->
+      <!-- Menu mobile: recherche + hamburger -->
+      <div class="lg:hidden flex items-center space-x-2 mr-2">
         <div
-          class="hidden lg:flex items-center space-x-5 text-[14px] tracking-[2px] leading-[20px]"
-        >
-          <a href="#" class="text-black hover:text-green-600 font-semibold"
-            >ACCEUIL</a
-          >
-          <a
-            href="apropos.html"
-            class="text-black hover:text-green-600 font-semibold"
-            >A PROPOS</a
-          >
-          <a
-            href="opportunite.html"
-            class="text-black hover:text-green-600 font-semibold"
-            >OPPORTUNITE</a
-          >
-          <a
-            href="produits.html"
-            class="text-black hover:text-green-600 font-semibold"
-            >PRODUITS</a
-          >
-          <a
-            href="temoignages.html"
-            class="text-black hover:text-green-600 font-semibold"
-            >TEMOIGNAGES</a
-          >
-          <a
-            href="contact.html"
-            class="text-black hover:text-green-600 font-semibold"
-            >CONTACT</a
-          >
-          <a
-            href="actualites.html"
-            class="text-black hover:text-green-600 font-semibold"
-            >ACTUALITES</a
-          >
-        </div>
-
-        <div
-          class="hidden lg:flex items-center justify-center bg-green-600 text-white p-2 rounded-full shadow-md text-lg h-10 w-10"
-        >
+          class="hidden lg:flex items-center justify-center bg-green-600 text-white p-2 rounded-full shadow-md text-lg h-10 w-10">
           <button><i class="bi bi-search"></i></button>
         </div>
-
-        <!-- Menu mobile: recherche + hamburger -->
-        <div class="lg:hidden flex items-center space-x-2 mr-2">
-          <div
-            class="hidden lg:flex items-center justify-center bg-green-600 text-white p-2 rounded-full shadow-md text-lg h-10 w-10"
-          >
-            <button><i class="bi bi-search"></i></button>
-          </div>
-          <button id="hamburger-btn" class="focus:outline-none">
-            <span class="block w-6 h-1 bg-green-600 mb-1"></span>
-            <span class="block w-6 h-1 bg-green-600 mb-1"></span>
-            <span class="block w-6 h-1 bg-green-600"></span>
-          </button>
-        </div>
-      </div>
-
-      <!-- Menu mobile -->
-      <div
-        id="mobile-menu"
-        class="hidden lg:hidden bg-white px-8 pb-4 font-semibold space-y-2"
-      >
-        <a href="#" class="block py-2 font-semibold">ACCEUIL</a>
-        <a href="apropos.html" class="block py-2">A PROPOS</a>
-        <a href="opportunite.html" class="block py-2">OPPORTUNITE</a>
-        <a href="produits.html" class="block py-2">PRODUITS</a>
-        <a href="temoignages.html" class="block py-2">TEMOIGNAGES</a>
-        <a href="contact.html" class="block py-2">CONTACT</a>
-        <a href="actualites.html" class="block py-2">ACTUALITES</a>
-      </div>
-    </nav>
-
-    <!-- LANDING SECTION -->
-    <section
-      class="h-[80%] lg:h-screen bg-cover bg-bottom flex flex-col justify-start items-center text-center text-black pt-6"
-      style="background-image: url('assets/bg.jpg')"
-    >
-      <div class="mx-12 lg:mx-36 md:mt-12">
-        <h1
-          class="md:text-5xl text-3xl font-extrabold leading-[120%] tracking-[6.5%]"
-        >
-          Change ta vie, Développe ton potentiel
-        </h1>
-        <div class="text-center w-full flex justify-center">
-          <p class="text-[20px] text-neutral-500 mt-4 md:w-[800px] w-full">
-            Avec TIENS DS-COM, révélez votre potentiel et devenez acteur de
-            votre réussite. Intégrez une organisation mondiale tournée vers
-            l'excellence, l’innovation et l’épanouissement personnel.
-          </p>
-        </div>
-      </div>
-      <div
-        class="md:my-12 my-6 flex flex-col justify-center items-center space-y-6 md:block md:space-x-10"
-      >
-        <button
-          class="bg-green-600 hover:bg-green-500 text-white font-normal text-[16px] md:text-[20px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full"
-        >
-          <a href="opportunite.html">Découvrir l'Opportunité</a>
-        </button>
-        <button
-          class="bg-green-600 hover:bg-green-500 text-white font-normal text-[16px] md:text-[20px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full"
-        >
-          <a href="contact.html">Nous rejoindre</a>
+        <button id="hamburger-btn" class="focus:outline-none">
+          <span class="block w-6 h-1 bg-green-600 mb-1"></span>
+          <span class="block w-6 h-1 bg-green-600 mb-1"></span>
+          <span class="block w-6 h-1 bg-green-600"></span>
         </button>
       </div>
+    </div>
 
-      <!-- <div class="bg-[#FFF5DB] h-[140px] w-[140px] rounded-br-[80px] absolute bottom-[-200px] right-2 ">
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white px-8 pb-4 font-semibold space-y-2">
+      <a href="#" class="block py-2 font-semibold">ACCEUIL</a>
+      <a href="apropos.html" class="block py-2">A PROPOS</a>
+      <a href="opportunite.html" class="block py-2">OPPORTUNITE</a>
+      <a href="produits.html" class="block py-2">PRODUITS</a>
+      <a href="temoignages.html" class="block py-2">TEMOIGNAGES</a>
+      <a href="contact.html" class="block py-2">CONTACT</a>
+      <a href="actualites.html" class="block py-2">ACTUALITES</a>
+    </div>
+  </nav>
 
-    </div> -->
-    </section>
-
-    <!-- SECTION ABOUT -->
-    <section class="py-16">
-      <div
-        class="container mx-auto px-12 grid md:grid-cols-2 md:gap-16 gap-8 items-center"
-      >
-        <video
-          src="assets/video.mp4"
-          class="w-full rounded-lg"
-          controls
-        ></video>
-        <div class="w-full md:w-[500px]">
-          <h2 class="text-3xl font-bold">TIENS DS-COM: Au cœur du continent</h2>
-          <p class="mt-4 italic text-sm">
-            TIENS DS-COM est la plateforme de développement personnel et
-            d’opportunités économiques du Groupe TIENS en Afrique francophone.
-            Nous formons, accompagnons et propulsons une nouvelle génération de
-            leaders engagés, autonomes et porteurs de changement. Rejoignez un
-            réseau mondial pour construire votre succès et impacter votre
-            communauté.
-          </p>
-          <button
-            class="mt-6 bg-green-600 text-white font-semibold text-[16px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full"
-          >
-            En savoir plus
-          </button>
-        </div>
+  <!-- LANDING SECTION -->
+  <section
+    class="h-[80%] lg:h-screen bg-cover bg-bottom flex flex-col justify-start items-center text-center text-black pt-6"
+    style="background-image: url('assets/bg.jpg')">
+    <div class="mx-12 lg:mx-36 md:mt-12">
+      <h1 class="md:text-5xl text-3xl font-extrabold leading-[120%] tracking-[6.5%]">
+        Change ta vie, Développe ton potentiel
+      </h1>
+      <div class="text-center w-full flex justify-center">
+        <p class="text-[20px] text-neutral-500 mt-4 md:w-[800px] w-full">
+          Avec TIENS DS-COM, révélez votre potentiel et devenez acteur de
+          votre réussite. Intégrez une organisation mondiale tournée vers
+          l'excellence, l’innovation et l’épanouissement personnel.
+        </p>
       </div>
-    </section>
+    </div>
+    <div class="md:my-12 my-6 flex flex-col justify-center items-center space-y-6 md:block md:space-x-10">
+      <button
+        class="bg-green-600 hover:bg-green-500 text-white font-normal text-[16px] md:text-[20px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full">
+        <a href="opportunite.html">Découvrir l'Opportunité</a>
+      </button>
+      <button
+        class="bg-green-600 hover:bg-green-500 text-white font-normal text-[16px] md:text-[20px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full">
+        <a href="contact.html">Nous rejoindre</a>
+      </button>
+    </div>
 
-    <!-- SECTION PARTENAIRES -->
-    <section class="py-8 md:py-12">
-      <div
-        class="container mx-auto px-12 flex flex-col md:flex-row md:items-center justify-between md:space-y-0"
-      >
-        <div class="mb-4">
-          <h3 class="text-2xl font-bold">Nos partenaires</h3>
-          <p class="text-gray-600 mt-4">
-            Des partenaires et références de taille <br />
-            mondiale accompagne dans <br />
-            notre mission.
-          </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 lg:flex items-center">
-          <img
-            src="assets/part1.jpg"
-            class="h-[100px] object-cover"
-            alt="Logo Partenaire"
-          />
-          <img
-            src="assets/part2.jpg"
-            class="h-[100px] object-cover"
-            alt="Logo Partenaire"
-          />
-          <img
-            src="assets/part3.jpg"
-            class="h-[100px] object-cover"
-            alt="Logo Partenaire"
-          />
-          <img
-            src="assets/part4.jpg"
-            class="h-[100px] object-cover"
-            alt="Logo Partenaire"
-          />
-          <img
-            src="assets/part5.jpg"
-            class="h-[100px] object-cover"
-            alt="Logo Partenaire"
-          />
-        </div>
-      </div>
-    </section>
+    <div class="absolute bottom-[-15rem] w-full right-[-74rem] md:block hidden">
+      <img src="./assets/rectangle23.png" alt="" class="w-36" />
+    </div>
+  </section>
 
-    <!-- SECTION JOIN US -->
-    <section class="bg-green-600 text-white py-12 px-6 md:px-16">
-      <div
-        class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8"
-      >
-        <!-- Texte et bouton desktop -->
-        <div class="text-center md:text-left">
-          <h2 class="text-xl md:text-2xl leading-relaxed max-w-2xl">
-            Rejoignez une communauté mondiale de libre entrepreneurs engagés
-            pour leur bien-être et celui des autres.
-          </h2>
-          <a href="contact.html">
-            <button
-              class="hidden md:inline-block mt-6 bg-white text-green-600 font-semibold text-lg px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
-            >
-              Nous rejoindre
-            </button>
-          </a>
-        </div>
+  <!-- SECTION ABOUT -->
+  <section class="py-20">
+    <div class="container mx-auto px-12 grid md:grid-cols-2 md:gap-16 gap-8 items-center">
+      <video src="assets/video.mp4" class="w-full rounded-lg" controls></video>
+      <div class="w-full md:w-[500px]">
+        <h2 class="text-3xl font-bold">TIENS DS-COM: Au cœur du continent</h2>
+        <p class="mt-4 italic text-sm">
+          TIENS DS-COM est la plateforme de développement personnel et
+          d’opportunités économiques du Groupe TIENS en Afrique francophone.
+          Nous formons, accompagnons et propulsons une nouvelle génération de
+          leaders engagés, autonomes et porteurs de changement. Rejoignez un
+          réseau mondial pour construire votre succès et impacter votre
+          communauté.
+        </p>
+        <button
+          class="mt-6 bg-green-600 text-white font-semibold text-[16px] leading-[100%] tracking-[6.5%] px-[20px] py-[10px] md:px-[30px] md:py-[15px] rounded-full">
+          En savoir plus
+        </button>
 
-        <!-- Image et bouton mobile -->
-        <div class="flex flex-col items-center">
-          <img
-            src="assets/org.png"
-            class="w-[250px] md:w-[280px]"
-            alt="Communauté"
-          />
-          <a href="contact.html">
-            <button
-              class="md:hidden mt-6 bg-white text-green-600 font-semibold text-lg px-6 py-3 rounded-full shadow hover:bg-gray-100 transition"
-            >
-              Nous rejoindre
-            </button>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION PRODUITS -->
-    <section class="bg-white py-16">
-      <div class="container mx-auto px-6 md:px-12">
-        <!-- Titre + HR -->
         <div
-          class="flex flex-col md:flex-row md:justify-between md:items-center gap-6"
-        >
-          <div>
+          class="absolute bg-[#EFF1FF] w-[150px] h-[150px] bottom-[-370px] right-[520px] z-[-1] rounded-br-[100px] md:flex hidden">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PARTENAIRES -->
+  <section class="py-8 md:py-12">
+    <div class="container mx-auto px-12 flex flex-col md:flex-row md:items-center justify-between md:space-y-0">
+      <div class="mb-4">
+        <h3 class="text-2xl font-bold">Nos partenaires</h3>
+        <p class="text-gray-600 mt-4">
+          Des partenaires et références de taille <br />
+          mondiale accompagne dans <br />
+          notre mission.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 lg:flex items-center">
+        <img src="assets/part1.jpg" class="h-[100px] object-cover" alt="Logo Partenaire" />
+        <img src="assets/part2.jpg" class="h-[100px] object-cover" alt="Logo Partenaire" />
+        <img src="assets/part3.jpg" class="h-[100px] object-cover" alt="Logo Partenaire" />
+        <img src="assets/part4.jpg" class="h-[100px] object-cover" alt="Logo Partenaire" />
+        <img src="assets/part5.jpg" class="h-[100px] object-cover" alt="Logo Partenaire" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION JOIN US -->
+  <section class="bg-green-600 text-white py-12 px-6 md:px-16">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <!-- Texte et bouton desktop -->
+      <div class="text-center md:text-left">
+        <h2 class="text-xl md:text-2xl leading-relaxed max-w-2xl">
+          Rejoignez une communauté mondiale de libre entrepreneurs engagés
+          pour leur bien-être et celui des autres.
+        </h2>
+        <a href="contact.html">
+          <button
+            class="hidden md:inline-block mt-6 bg-white text-green-600 font-semibold text-lg px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
+            Nous rejoindre
+          </button>
+        </a>
+      </div>
+
+      <!-- Image et bouton mobile -->
+      <div class="flex flex-col items-center">
+        <img src="assets/org.png" class="w-[250px] md:w-[280px]" alt="Communauté" />
+        <a href="contact.html">
+          <button
+            class="md:hidden mt-6 bg-white text-green-600 font-semibold text-lg px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
+            Nous rejoindre
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PRODUITS -->
+  <section class="py-16">
+    <div class="container mx-auto px-6 md:px-12">
+      <!-- Titre + HR -->
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center gap-6 w-full">
+        <div class="w-full">
+          <div class="flex items-center justify-between w-full gap-24">
             <h2 class="text-black text-2xl md:text-3xl font-bold mb-4">
               Nos produits
             </h2>
-            <p class="text-md text-[#565656] max-w-md">
-              Découvrez une gamme innovante de produits de bien-être, de
-              nutrition, de soins et d’hygiène issus de la recherche avancée du
-              Groupe TIENS.
-            </p>
-          </div>
-          <div class="hidden md:block flex-grow">
-            <hr class="border-t-4 border-green-600 mt-4" />
-          </div>
-        </div>
 
-        <!-- Produits -->
+            <div class="hidden md:block flex-grow w-1/3 border-4 border-green-600">
+            </div>
+          </div>
+          <p class="text-md text-[#565656] max-w-md">
+            Découvrez une gamme innovante de produits de bien-être, de
+            nutrition, de soins et d’hygiène issus de la recherche avancée du
+            Groupe TIENS.
+          </p>
+        </div>
+      </div>
+
+      <div class="absolute bg-[#FFF5DB] w-[150px] h-[150px] bottom-[-105rem] left-[70px] z-[-1] rounded-tl-[100px] md:flex hidden">
+      </div>
+
+      <!-- Produits -->
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 justify-center">
         <div
-          class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 justify-center"
-        >
-          <div
-            class="h-[350px] w-full max-w-[300px] mx-auto border border-green-600 bg-gray-100 p-4 text-center rounded-3xl shadow"
-          >
-            <img
-              src="assets/cordyceps.png"
-              class="mx-auto h-[200px] object-contain"
-              alt="Produit"
-            />
-            <p class="text-[22px] text-green-600 font-bold mt-4">CORDYCEPS</p>
-          </div>
-          <div
-            class="h-[350px] w-full max-w-[300px] mx-auto border border-green-600 bg-gray-100 p-4 text-center rounded-3xl shadow"
-          >
-            <img
-              src="assets/zinc.png"
-              class="mx-auto h-[200px] object-contain"
-              alt="Produit"
-            />
-            <p class="text-[22px] text-green-600 font-bold mt-4">ZINC</p>
-          </div>
-          <div
-            class="h-[350px] w-full max-w-[300px] mx-auto border border-green-600 bg-gray-100 p-4 text-center rounded-3xl shadow"
-          >
-            <img
-              src="assets/calcium.png"
-              class="mx-auto h-[200px] object-contain"
-              alt="Produit"
-            />
-            <p class="text-[22px] text-green-600 font-bold mt-4">CALCIUM</p>
-          </div>
+          class="h-[350px] w-full max-w-[300px] mx-auto border border-green-600 bg-gray-100 p-4 text-center rounded-3xl shadow">
+          <img src="assets/cordyceps.png" class="mx-auto h-[200px] object-contain" alt="Produit" />
+          <p class="text-[22px] text-green-600 font-bold mt-4">CORDYCEPS</p>
+        </div>
+        <div
+          class="h-[350px] w-full max-w-[300px] mx-auto border border-green-600 bg-gray-100 p-4 text-center rounded-3xl shadow">
+          <img src="assets/zinc.png" class="mx-auto h-[200px] object-contain" alt="Produit" />
+          <p class="text-[22px] text-green-600 font-bold mt-4">ZINC</p>
+        </div>
+        <div
+          class="h-[350px] w-full max-w-[300px] mx-auto border border-green-600 bg-gray-100 p-4 text-center rounded-3xl shadow">
+          <img src="assets/calcium.png" class="mx-auto h-[200px] object-contain" alt="Produit" />
+          <p class="text-[22px] text-green-600 font-bold mt-4">CALCIUM</p>
         </div>
       </div>
-    </section>
 
-    <!-- SECTION TÉMOIGNAGES -->
-    <section class="py-16 container mx-auto">
-      <div class="px-4 text-center">
-        <h2 class="font-semibold">Témoignages</h2>
-        <p class="text-gray-600 mt-2 mb-6">
-          Nos libres entrepreneurs à travers l’Afrique racontent leurs parcours
-          et racontent leurs succès
+      <div>
+        <div class="text-center mt-12">
+          <a href="produits.html">
+            <button
+              class="bg-green-600 text-white font-semibold text-lg px-6 py-3 rounded-full shadow hover:bg-green-500 transition">
+              Découvrir tous les produits
+            </button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div
+      class="absolute bg-[#F4F9FF] w-[1100px] h-[550px] bottom-[-117rem] right-0  rounded-tl-[300px] md:flex hidden z-[-1]">
+    </div>
+  </section>
+
+  <!-- SECTION TÉMOIGNAGES -->
+  <section class="py-16 container mx-auto">
+    <div class="px-4 text-center mb-12">
+      <h2 class="font-semibold">Témoignages</h2>
+      <p class="text-gray-600 mt-2 mb-6">
+        Nos libres entrepreneurs à travers l’Afrique racontent leurs parcours
+        et racontent leurs succès
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 px-4 items-center">
+      <!-- Photo de goutte personnalisée possible en SVG ou mask -->
+      <img src="assets/user1.png" class="w-[389px]" alt="Photo Témoignage" />
+
+      <div class="mx-4">
+        <h4 class="text-justify font-bold">LADAGO PACHA</h4>
+        <p class="text-justify italic pt-2">
+          “TIENS DS-COM a totalement transformé ma vie. Parti de zéro, j’ai
+          bâti un réseau solide à l’échelle internationale et accédé à une
+          liberté financière durable. Aujourd’hui, je forme à mon tour des
+          leaders pour qu’eux aussi réalisent leur potentiel."
         </p>
-      </div>
-      <!-- <div class="flex justify-center items-center mx-auto px-12"> -->
-      <div class="grid md:grid-cols-3 px-4 items-center">
-        <!-- Photo de goutte personnalisée possible en SVG ou mask -->
-        <img
-          src="assets/user1.jpg"
-          class="w-[389px]"
-          alt="Photo Témoignage"
-        />
-        <div class="mx-4">
-          <h4 class="text-justify font-bold">LADAGO PACHA</h4>
-          <p class="text-justify italic pt-2">
-            “TIENS DS-COM a totalement transformé ma vie. Parti de zéro, j’ai
-            bâti un réseau solide à l’échelle internationale et accédé à une
-            liberté financière durable. Aujourd’hui, je forme à mon tour des
-            leaders pour qu’eux aussi réalisent leur potentiel."
-          </p>
-        </div>
-        <div class="flex justify-center mt-12">
-          <img src="assets/userGroup.jpg" class="w-[328px]" alt="" />
+        <div class="absolute bottom-[-143rem] left-[230px] z-[-1] md:flex hidden">
+          <img src="./assets/dot.png" alt="">
         </div>
       </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-white py-8 px-8 md:px-16">
-      <div
-        class="container mx-auto border-y border-gray-300 px-3 py-3 grid md:grid-cols-6 gap-x-8 items-start"
-      >
-        <!-- Section principale élargie -->
-        <div class="md:col-span-2">
-          <img src="assets/Logo DS-Com.jpg" class="md:w-[162px] w-[80px]" alt="" />
-          <p class="mt-2 text-left text-gray-600 text-sm">
-            TIENS DS-COM est la représentation officielle du Groupe TIENS en
-            Afrique francophone, dédiée à la promotion de l’entrepreneuriat, du
-            bien-être et du développement personnel à travers un réseau
-            international d’opportunités.
-          </p>
-          <div class="hidden md:flex space-x-4 mt-4">
-            <a href="#"
-              ><img src="assets/facebook.png" class="w-[30px]" alt=""
-            /></a>
-            <a href="#"
-              ><img src="assets/twitter.png" class="w-[30px]" alt=""
-            /></a>
-            <a href="#"
-              ><img src="assets/linkedin.png" class="w-[30px]" alt=""
-            /></a>
-          </div>
+      <div class="flex justify-center mt-12">
+        <img src="assets/userGroup.png" class="w-[328px]" alt="" />
+        <div
+          class="bg-[#FFF5DB] w-[160px] h-[160px] absolute bottom-[-154rem] right-[230px] rounded-full z-[-1] md:flex hidden">
         </div>
 
-        <!-- Autres colonnes -->
-        <div class="mt-2 md:mt-16">
-          <h4 class="font-bold mb-2">Notre Impact</h4>
-          <ul class="space-y-1 text-sm">
-            <li><a href="#">Notre réseau </a></li>
-            <li><a href="#">Nos actions sociales</a></li>
-            <li><a href="#">Chiffres clés</a></li>
-            <li><a href="#">Nos Projets </a></li>
-          </ul>
-        </div>
-        <div class="mt-2 md:mt-16">
-          <h4 class="font-bold mb-2">TIENS DS-COM</h4>
-          <ul class="space-y-1 text-sm">
-            <li><a href="#">A Propos</a></li>
-            <li><a href="#">Carrières</a></li>
-            <li><a href="#">Devenir Investisseur</a></li>
-          </ul>
-        </div>
-        <div class="mt-2 md:mt-16">
-          <h4 class="font-bold mb-2">Support</h4>
-          <ul class="space-y-1 text-sm">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">CGV</a></li>
-            <li><a href="#">Business</a></li>
-          </ul>
-        </div>
-        <div class="mt-2 md:mt-16">
-          <h4 class="font-bold mb-2">Contact</h4>
-          <ul class="space-y-1 text-sm">
-            <li><a href="#">WhatsApp</a></li>
-            <li><a href="#">Support 24</a></li>
-          </ul>
-        </div>
-        <div class="md:hidden flex items-center space-x-4 mt-4">
-          <a href="#"
-            ><img src="assets/facebook.png" class="h-[36px] w-[36px]" alt=""
-          /></a>
-          <a href="#"
-            ><img src="assets/twitter.png" class="h-[36px] w-[36px]" alt=""
-          /></a>
-          <a href="#"
-            ><img src="assets/linkedin.png" class="h-[36px] w-[36px]" alt=""
-          /></a>
-        </div>
       </div>
-      <div class="text-center text-sm text-gray-500 mt-2 font-semibold">
-        © 2025 TIENS. Tous droits réservés.
-      </div>
-    </footer>
+    </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <!-- FOOTER -->
+  <footer class="bg-white py-8 px-8 md:px-16">
+    <div class="container mx-auto border-y border-gray-300 px-3 py-3 grid md:grid-cols-6 gap-x-8 items-start">
+      <!-- Section principale élargie -->
+      <div class="md:col-span-2">
+        <img src="assets/Logo DS-Com.jpg" class="md:w-[162px] w-[80px]" alt="" />
+        <p class="mt-2 text-left text-gray-600 text-sm">
+          TIENS DS-COM est la représentation officielle du Groupe TIENS en
+          Afrique francophone, dédiée à la promotion de l’entrepreneuriat, du
+          bien-être et du développement personnel à travers un réseau
+          international d’opportunités.
+        </p>
+        <div class="hidden md:flex space-x-4 mt-4">
+          <a href="#"><img src="assets/facebook.png" class="w-[30px]" alt="" /></a>
+          <a href="#"><img src="assets/twitter.png" class="w-[30px]" alt="" /></a>
+          <a href="#"><img src="assets/linkedin.png" class="w-[30px]" alt="" /></a>
+        </div>
+      </div>
+
+      <!-- Autres colonnes -->
+      <div class="mt-2 md:mt-16">
+        <h4 class="font-bold mb-2">Notre Impact</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">Notre réseau </a></li>
+          <li><a href="#">Nos actions sociales</a></li>
+          <li><a href="#">Chiffres clés</a></li>
+          <li><a href="#">Nos Projets </a></li>
+        </ul>
+      </div>
+      <div class="mt-2 md:mt-16">
+        <h4 class="font-bold mb-2">TIENS DS-COM</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">A Propos</a></li>
+          <li><a href="#">Carrières</a></li>
+          <li><a href="#">Devenir Investisseur</a></li>
+        </ul>
+      </div>
+      <div class="mt-2 md:mt-16">
+        <h4 class="font-bold mb-2">Support</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">Business</a></li>
+        </ul>
+      </div>
+      <div class="mt-2 md:mt-16">
+        <h4 class="font-bold mb-2">Contact</h4>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#">WhatsApp</a></li>
+          <li><a href="#">Support 24</a></li>
+        </ul>
+      </div>
+      <div class="md:hidden flex items-center space-x-4 mt-4">
+        <a href="#"><img src="assets/facebook.png" class="h-[36px] w-[36px]" alt="" /></a>
+        <a href="#"><img src="assets/twitter.png" class="h-[36px] w-[36px]" alt="" /></a>
+        <a href="#"><img src="assets/linkedin.png" class="h-[36px] w-[36px]" alt="" /></a>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-500 mt-2 font-semibold">
+      © 2025 TIENS. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
